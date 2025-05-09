@@ -1,0 +1,341 @@
+<!doctype html>
+<html data-bs-theme="light" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>My PC</title>
+        <link rel="stylesheet" href="assets/css/Perfect%20DOS%20VGA%20437.css?h=38c8f9941c6035e6af76573914346433" />
+        <link rel="stylesheet" href="assets/css/browser.css?h=15581381b47c5e260517be25d43fcb83" />
+        <link rel="stylesheet" href="assets/css/BSOD.css?h=c94a26adc07cfef02446422c48a5bd94" />
+        <link rel="stylesheet" href="assets/css/Clock-Real-Time.css?h=9487c3ee0344eac7db603b7d06424be5" />
+        <link rel="stylesheet" href="https://unpkg.com/98.css" />
+        <link rel="stylesheet" href="assets/css/Interface.css?h=49286ce7e6615b8daa90906a66594369" />
+        <link rel="stylesheet" href="assets/css/Variations.css?h=80610c0a0f83c68dd781f51b38857669" />
+    </head>
+
+    <body
+        style="
+            background-image: url(https://98.js.org/images/clouds.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-color: teal;
+        ">
+        <!-- Start: Restriction -->
+        <!--<div>
+            <div id="page-overlay"></div>
+            <div id="restriction-popup" class="window">
+                <div id="redbar" class="title-bar">
+                    <div class="title-bar-text"><span>Important Notice</span></div>
+                </div>
+                <div class="window-body">
+                    <div class="grid">
+                        <img
+                            src="assets/img/msg_error-0.png?h=3b3b17c81f5a493ec7587f425d4a41fa"
+                            style="image-rendering: pixelated; padding-right: 5px; margin-left: -1px" />
+                        <p id="restriction-message-text">
+                            To view this site, you must be on a desktop computer with a sufficiently large browser
+                            window<br /><br />Please ensure your browser window at a large size and if the issue
+                            persists, decrease your zoom level.
+                        </p>
+                    </div>
+                    <div class="field-row" style="margin-top: 15px; display: flex; justify-content: center">
+                        <button class="disabled" id="restriction-ok-button" disabled="">Unavaliable</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End: Restriction -->
+        <!-- Start: Main Content -->
+        <div id="main-content">
+            <!-- Start: Window -->
+            <div class="window" style="/*width: 300px;*/ margin: 10vh; height: inherit">
+                <div class="title-bar">
+                    <div class="title-bar-text"><span> A Window With Stuff In It </span></div>
+                </div>
+                <div class="toolbars">
+                    <div class="toolbar" id="menu-bar-toolbar">
+                        <div class="toolbar-drag-handle"></div>
+                        <div
+                            class="menus"
+                            role="menubar"
+                            aria-label="Application Menu"
+                            aria-owns=" menu-popup-0845gd9qi2xc menu-popup-hzeauftsn86i menu-popup-q4vsji15medj menu-popup-1m4xtghllimus menu-popup-1wfeuczvz3jj4 menu-popup-21g0rtwjglwvj menu-popup-2b031pammbqcla"
+                            style="touch-action: none">
+                            <div
+                                class="menu-button file-menu-button"
+                                aria-expanded="false"
+                                aria-haspopup="true"
+                                role="menuitem"
+                                id="menu-button-&amp;File-g9x1hv9zlaxk"
+                                aria-controls="menu-popup-0845gd9qi2xc"
+                                tabindex="-1">
+                                <span><span class="menu-hotkey">F</span>ile</span>
+                            </div>
+                            <div
+                                class="menu-button edit-menu-button"
+                                aria-expanded="false"
+                                aria-haspopup="true"
+                                role="menuitem"
+                                id="menu-button-&amp;Edit-p47kmx9am8l3"
+                                aria-controls="menu-popup-hzeauftsn86i"
+                                tabindex="-1">
+                                <span><span class="menu-hotkey">E</span>dit</span>
+                            </div>
+                            <div
+                                class="menu-button view-menu-button"
+                                aria-expanded="false"
+                                aria-haspopup="true"
+                                role="menuitem"
+                                id="menu-button-&amp;View-1le9b2glj9a"
+                                aria-controls="menu-popup-q4vsji15medj"
+                                tabindex="-1">
+                                <span><span class="menu-hotkey">V</span>iew</span>
+                            </div>
+                            <div
+                                class="menu-button go-menu-button"
+                                aria-expanded="false"
+                                aria-haspopup="true"
+                                role="menuitem"
+                                id="menu-button-&amp;Go-1v8gd2xhtchol"
+                                aria-controls="menu-popup-1m4xtghllimus"
+                                tabindex="-1">
+                                <span><span class="menu-hotkey">G</span>o</span>
+                            </div>
+                            <div
+                                class="menu-button favorites-menu-button"
+                                aria-expanded="false"
+                                aria-haspopup="true"
+                                role="menuitem"
+                                id="menu-button-F&amp;avorites-20gkzcl7xu055"
+                                aria-controls="menu-popup-1wfeuczvz3jj4"
+                                tabindex="-1">
+                                <span>F<span class="menu-hotkey">a</span>vorites</span>
+                            </div>
+                            <div
+                                class="menu-button tools-menu-button"
+                                aria-expanded="false"
+                                aria-haspopup="true"
+                                role="menuitem"
+                                id="menu-button-&amp;Tools-2aok5j5xeaqo"
+                                aria-controls="menu-popup-21g0rtwjglwvj"
+                                tabindex="-1">
+                                <span><span class="menu-hotkey">T</span>ools</span>
+                            </div>
+                            <div
+                                class="menu-button help-menu-button"
+                                aria-expanded="false"
+                                aria-haspopup="true"
+                                role="menuitem"
+                                id="menu-button-&amp;Help-2e54kglpsdiec"
+                                aria-controls="menu-popup-2b031pammbqcla"
+                                tabindex="-1">
+                                <span><span class="menu-hotkey">H</span>elp</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="toolbar" id="standard-buttons-toolbar">
+                        <div class="toolbar-drag-handle"></div>
+                        <div id="standard-buttons" style="display: none">
+                            <div class="toolbar-compound-button-wrapper">
+                                <button class="disabled toolbar-button lightweight back-button" disabled="disabled">
+                                    <span class="label-text">Back</span>
+                                    <div class="icon" style="background-position: 0px 0px"></div></button
+                                ><button
+                                    class="disabled toolbar-dropdown-button lightweight back-dropdown-button"
+                                    disabled="disabled">
+                                    <svg
+                                        width="16"
+                                        height="16"
+                                        viewbox="0 0 16 16"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        style="fill: currentColor; display: inline-block; vertical-align: middle">
+                                        <path
+                                            style="transform: rotate(90deg); transform-origin: center"
+                                            d="m6 4 4 4-4 4z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="toolbar-compound-button-wrapper">
+                                <button class="disabled toolbar-button lightweight forward-button" disabled="disabled">
+                                    <span class="label-text">Forward</span>
+                                    <div class="icon" style="background-position: -20px 0px"></div></button
+                                ><button
+                                    class="disabled toolbar-dropdown-button lightweight forward-dropdown-button"
+                                    disabled="disabled">
+                                    <svg
+                                        width="16"
+                                        height="16"
+                                        viewbox="0 0 16 16"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        style="fill: currentColor; display: inline-block; vertical-align: middle">
+                                        <path
+                                            style="transform: rotate(90deg); transform-origin: center"
+                                            d="m6 4 4 4-4 4z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <button class="toolbar-button lightweight up-button">
+                                <span class="label-text">Up</span>
+                                <div class="icon" style="background-position: -880px 0px"></div>
+                            </button>
+                            <hr aria-orientation="vertical" />
+                            <button class="toolbar-button lightweight cut-button">
+                                <span class="label-text">Cut</span>
+                                <div class="icon" style="background-position: -420px 0px"></div></button
+                            ><button class="toolbar-button lightweight copy-button">
+                                <span class="label-text">Copy</span>
+                                <div class="icon" style="background-position: -440px 0px"></div></button
+                            ><button class="toolbar-button lightweight paste-button">
+                                <span class="label-text">Paste</span>
+                                <div class="icon" style="background-position: -460px 0px"></div>
+                            </button>
+                            <hr aria-orientation="vertical" />
+                            <button class="toolbar-button lightweight undo-button">
+                                <span class="label-text">Undo</span>
+                                <div class="icon" style="background-position: -480px 0px"></div>
+                            </button>
+                            <hr aria-orientation="vertical" />
+                            <button class="toolbar-button lightweight delete-button">
+                                <span class="label-text">Delete</span>
+                                <div class="icon" style="background-position: -520px 0px"></div></button
+                            ><button class="toolbar-button lightweight properties-button">
+                                <span class="label-text">Properties</span>
+                                <div class="icon" style="background-position: -620px 0px"></div>
+                            </button>
+                            <hr aria-orientation="vertical" />
+                            <div class="toolbar-compound-button-wrapper">
+                                <button class="toolbar-button lightweight cycle-view-mode-button">
+                                    <span class="label-text">Views</span>
+                                    <div class="icon" style="background-position: -760px 0px"></div></button
+                                ><button class="toolbar-dropdown-button lightweight views-dropdown-button">
+                                    <svg
+                                        width="16"
+                                        height="16"
+                                        viewbox="0 0 16 16"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        style="fill: currentColor; display: inline-block; vertical-align: middle">
+                                        <path
+                                            style="transform: rotate(90deg); transform-origin: center"
+                                            d="m6 4 4 4-4 4z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div id="internet-buttons">
+                            <div class="toolbar-compound-button-wrapper">
+                                <button class="disabled toolbar-button lightweight back-button" disabled="disabled">
+                                    <span class="label-text">Back</span>
+                                    <div class="icon" style="background-position: 0px 0px"></div></button
+                                ><button
+                                    class="disabled toolbar-dropdown-button lightweight back-dropdown-button"
+                                    disabled="disabled">
+                                    <svg
+                                        width="16"
+                                        height="16"
+                                        viewbox="0 0 16 16"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        style="fill: currentColor; display: inline-block; vertical-align: middle">
+                                        <path
+                                            style="transform: rotate(90deg); transform-origin: center"
+                                            d="m6 4 4 4-4 4z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="toolbar-compound-button-wrapper">
+                                <button class="disabled toolbar-button lightweight forward-button" disabled="disabled">
+                                    <span class="label-text">Forward</span>
+                                    <div class="icon" style="background-position: -20px 0px"></div></button
+                                ><button
+                                    class="disabled toolbar-dropdown-button lightweight forward-dropdown-button"
+                                    disabled="disabled">
+                                    <svg
+                                        width="16"
+                                        height="16"
+                                        viewbox="0 0 16 16"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        style="fill: currentColor; display: inline-block; vertical-align: middle">
+                                        <path
+                                            style="transform: rotate(90deg); transform-origin: center"
+                                            d="m6 4 4 4-4 4z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <button class="toolbar-button lightweight stop-button">
+                                <span class="label-text">Stop</span>
+                                <div class="icon" style="background-position: -40px 0px"></div></button
+                            ><button class="toolbar-button lightweight refresh-button">
+                                <span class="label-text">Refresh</span>
+                                <div class="icon" style="background-position: -60px 0px"></div></button
+                            ><button class="toolbar-button lightweight home-button">
+                                <span class="label-text">Home</span>
+                                <div class="icon" style="background-position: -80px 0px"></div>
+                            </button>
+                            <hr aria-orientation="vertical" />
+                            <button class="toolbar-button lightweight toggle search-button">
+                                <span class="label-text">Search</span>
+                                <div class="icon" style="background-position: -100px 0px"></div></button
+                            ><button class="toolbar-button lightweight toggle favorites-button">
+                                <span class="label-text">Favorites</span>
+                                <div class="icon" style="background-position: -120px 0px"></div></button
+                            ><button class="toolbar-button lightweight toggle history-button">
+                                <span class="label-text">History</span>
+                                <div class="icon" style="background-position: -240px 0px"></div>
+                            </button>
+                            <hr aria-orientation="vertical" />
+                            <button class="toolbar-button lightweight print-button">
+                                <span class="label-text">Print</span>
+                                <div class="icon" style="background-position: -140px 0px"></div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="toolbar" id="address-bar-toolbar">
+                        <div class="toolbar-drag-handle"></div>
+                        <div id="address-bar">
+                            <label for="address">Address</label>
+                            <div id="address-compound-input" class="inset-deep">
+                                <img
+                                    id="address-icon"
+                                    width="16"
+                                    height="16"
+                                    src="https://98.js.org/images/icons/html-16x16.png"
+                                    alt="" /><input type="text" autocomplete="off" id="address" /><button
+                                    class="disabled"
+                                    id="address-dropdown-button"
+                                    disabled="">
+                                    <svg
+                                        width="16"
+                                        height="16"
+                                        viewbox="0 0 16 16"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        style="fill: currentColor; display: inline-block; vertical-align: middle">
+                                        <path
+                                            style="transform: rotate(90deg); transform-origin: center"
+                                            d="m5 6 4 4-4 4z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End: Window -->
+        </div>
+        <!-- End: Main Content -->
+        <!-- Start: Taskbar -->
+        <div class="start-bar" style="position: fixed">
+            <!-- Start: Start-button --><button class="button start-button-wrapper js-start-button" title="Start Menu">
+                <div class="start-button"></div></button
+            ><!-- End: Start-button -->
+            <div class="separator"></div>
+            <!-- Start: Clock -->
+            <div class="time" style="height: 23px; margin: -1px 0px">
+                <p id="clock" style="text-align: center">9:11 pm</p>
+            </div>
+            <!-- End: Clock -->
+        </div>
+        <!-- End: Taskbar -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        <script src="assets/js/Clock-Real-Time-real-time-clock.js?h=5167b12daf88d53c4e496439bb8f1846"></script>
+        <script src="assets/js/restriction.js?h=e063fb450bdb8467971ab365e0d5df01"></script>
+    </body>
+</html>

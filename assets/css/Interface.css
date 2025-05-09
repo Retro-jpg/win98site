@@ -1,0 +1,113 @@
+.start-bar {
+  float: right;
+  padding: 3px 2px 2px 2px;
+  box-shadow: inset 0 1px #fff;
+  display: block;
+  background-color: silver;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 1px solid silver;
+  position: fixed;
+  z-index: 999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 100%;
+}
+
+.start-button-wrapper {
+  float: left;
+  vertical-align: middle;
+  display: inline-block;
+  padding: 2px 4px 2px;
+  background-color: silver;
+  min-width: 54px;
+  color: #000;
+  height: 22px;
+}
+
+.start-button {
+  background-image: url(https://win98icons.alexmeub.com/images/start-button.png);
+  background-repeat: no-repeat;
+  width: 45px;
+  height: 14px;
+  image-rendering: pixelated;
+}
+
+.time {
+  float: right;
+  font-family: "Pixelated MS Sans Serif";
+  font-size: 11px;
+  width: 50px;
+}
+
+.time,
+.start-bar-window {
+  vertical-align: middle;
+  height: 22px;
+  line-height: 22px;
+  box-shadow:
+    inset -1px -1px #fff,
+    inset 1px 1px gray;
+  color: #000;
+}
+
+#page-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(85, 0, 0, 0.78);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  z-index: 9999;
+}
+
+#restriction-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 380px;
+  z-index: 10000;
+}
+
+#restriction-popup .window-body {
+  padding: 10px 12px;
+}
+
+#restriction-popup p {
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+* {
+  font-family: "Pixelated MS Sans Serif";
+  image-rendering: pixelated !important;
+}
+
+.separator {
+  background: gray;
+  width: 1px;
+  border-right: 1px solid #fff;
+  margin-left: 1px;
+  margin-top: 1px;
+  height: calc(100% - 3px);
+  margin-right: 2px;
+}
+
+.grid {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-start;
+  align-content: center;
+  justify-content: flex-start;
+}

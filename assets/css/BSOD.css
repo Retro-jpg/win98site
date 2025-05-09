@@ -1,0 +1,38 @@
+.bsod-background {
+  background-color: #000080;
+  font-family: 'Perfect DOS VGA 437';
+}
+
+.bsod-padding {
+  padding: 30vh 10vh 0 10vh;
+}
+
+.bsod-text {
+  font-family: 'Perfect DOS VGA 437' !important;
+  color: #ffffff;
+  font-size: 4vh;
+  line-height: 4vh;
+}
+
+#top {
+  color: #000080;
+  text-align: center;
+  background-color: #c0c0c0;
+  line-height: 4vh;
+  justify-content: center;
+  display: table;
+  margin: 0 auto;
+  padding-left: 2vh;
+  padding-right: 2vh;
+}
+
+#middle {
+  padding-top: 5vh;
+}
+
+#bottom {
+  padding-top: 8vh;
+  display: table;
+  margin: 0 auto;
+}
+
